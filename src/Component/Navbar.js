@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 function NavBar() {
     return (
         <Navbar expand="lg" className="navbar expand navbar-dark bg-dark" >
+            
             <Container fluid>
                 <Navbar.Brand href="#"><Image src={require('../Component/Images/Solar-logo.png')}style={{width:'75px'}}/></Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />

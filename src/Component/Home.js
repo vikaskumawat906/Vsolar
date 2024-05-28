@@ -55,11 +55,11 @@ function Home() {
             </div>
           </div>
         </Col>
-        <Col><Image className="d-block w-100 custom-image " src={require('../Component/Images/Home-Solar-3.jpg')} />
+        <Col><Image className="d-block w-100 custom-image" src={require('../Component/Images/Home-Solar-3.jpg')} />
         </Col>
       </Row>
       <hr />
-      <Row><Col style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}><h1><i> Our Branches</i></h1></Col></Row>
+      <Row><Col style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}><h1><i> Our Branches &#x1F5FA;</i></h1></Col></Row>
       <Row lg={4} md={2}  xs={2}>
         <Col>
           <Image className="d-block w-100 custom-image my-1" src={require('../Component/Images/Location-1.jpg')} />

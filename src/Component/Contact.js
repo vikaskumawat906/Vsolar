@@ -22,6 +22,12 @@ function Contact() {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(form);
+    setForm({
+      name: "",
+      email: "",
+      number: "",
+      location: ""
+    })
   };
 
   return (

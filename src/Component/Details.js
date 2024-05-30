@@ -1,17 +1,24 @@
 import React from "react";
-import { Container,Col, Row, Image } from "react-bootstrap";
-function Details(){
-    return(
-        <Container fluid>
-         <Row className='my-2'>
-         <Col lg={6}><Image fluid src={require('../Component/Images/Home-Solar-1.jpg')} />
+import { Container, Col, Row, Image } from "react-bootstrap";
+import { useLocation } from "react-router-dom";
+
+function Details() {
+  const location = useLocation();
+  const { project } = location.state || {};
+
+  return (
+    <Container fluid>
+      <Row className='my-1'>
+        <Col lg={6}>
+          <Image className="card-transition" fluid src={project.img} alt={project.heading} />
         </Col>
         <Col lg={6}>
-            <p>hjdfhuaj afuhaduig adgjaiughai gjduifguidhfgd fgiguiadfgdifgjadf erigjierjgidjgiajfg rigjdigjdifjidjfgiwj rgjiegjidf gjsigjiwrgj wgjwirgjwrigjwrigjwoig igjwiorgjw rgwrigjwiorg wigmw iwrjgiowjg wgijwiorgjwr g wgwirgjwor giwgj
-            </p>
+          <h3><i>{project.heading}</i></h3>
+          <p><i>{project.paragraph}</i></p>
         </Col>
       </Row>
-        </Container>
-    )
+    </Container>
+  );
 }
+
 export default Details;

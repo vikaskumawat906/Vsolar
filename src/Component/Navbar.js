@@ -15,7 +15,7 @@ function NavBar() {
     };
 
     return (
-        <Navbar expand="lg" className="navbar navbar-dark bg-dark">
+        <Navbar fluid expand="lg" className="navbar navbar-dark bg-dark">
             <Container>
                 <Navbar.Brand href="#">
                     <Image src={require('../Component/Images/Solar-logo.png')} style={{ width: '75px' }} />

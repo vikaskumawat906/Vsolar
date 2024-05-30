@@ -1,4 +1,4 @@
-// src/Footer.js
+import { Link } from 'react-router-dom';
 import React from 'react';
 import './App.css';
 
@@ -8,10 +8,10 @@ function Footer() {
       <footer className="footer my-1">
         <div className="footer-content">
           <p>&copy; 2024 V-Solar. All rights reserved.</p>
-          <nav className="footer-nav">
-            <a href="/">Home</a>
-            <a href="/contactus">Contact Us</a>
-            <a href="/overview">Overview</a>
+          <nav style={{display:'flex'}}>
+            <Link className='nav-link' style={{paddingInline:'15px'}} to="/" >Home</Link> 
+            <Link className='nav-link' style={{paddingInline:'15px'}} to="/contactus" >Contact Us</Link> 
+            <Link className='nav-link' style={{paddingInline:'15px'}} to="/overview" >Overview</Link> 
           </nav>
         </div>
       </footer>

@@ -11,6 +11,7 @@ import Contact from './Component/Contact';
 import PastProjects from './Component/PastProjects';
 import Details from './Component/Details';
 import Overview from './Component/Overview';
+import Services from './Component/Services';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
     <Route path='/pastprojects' element={<PastProjects/>}/>
     <Route path='/details' element={<Details/>}/>
     <Route path='/overview' element={<Overview/>}/>
+    <Route path='/services' element={<Services/>}/>
    </Routes>
    <Footer/>
    </Router>

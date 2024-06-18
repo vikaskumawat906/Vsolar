@@ -5,6 +5,9 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 
+
+
+
 function NavBar() {
     const navbarRef = useRef(null);
 
@@ -23,10 +26,10 @@ function NavBar() {
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll" ref={navbarRef}>
                     <Nav className="me-auto my-2 my-lg-0 mx-5" style={{ maxHeight: '80px' }} navbarScroll>
-                        <Link className='nav-link' to="/" style={{ paddingInline: '35px' }} onClick={handleLinkClick}>Home</Link>
-                        <Link className='nav-link' to="/pastprojects" style={{ paddingInline: '35px' }} onClick={handleLinkClick}>Past Projects</Link>
-                        <Link className='nav-link' to="/overview" style={{ paddingInline: '35px' }} onClick={handleLinkClick}>Overview</Link>
-                        <Link className='nav-link' to="/contactus" style={{ paddingInline: '35px' }} onClick={handleLinkClick}>Contact Us &#128222;</Link>
+                        <Link className='nav-link' to="/" style={{ marginInline: '35px' }} onClick={handleLinkClick} >Home</Link>
+                        <Link className='nav-link' to="/pastprojects" style={{ marginInline: '35px' }} onClick={handleLinkClick}>Past Projects</Link>
+                        <Link className='nav-link' to="/overview" style={{ marginInline: '35px' }} onClick={handleLinkClick}>Overview</Link>
+                        <Link className='nav-link' to="/contactus" style={{ marginInline: '35px' }} onClick={handleLinkClick}>Contact Us &#128222;</Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
